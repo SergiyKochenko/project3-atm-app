@@ -6,6 +6,9 @@ class cardHolder():
     self.lastname = lastname
     self.balance = balance
 
+  def __str__(self):
+    return f"cardHolder({self.cardNum}, {self.pin}, {self.firstname}, {self.lastname}, {self.balance})"
+
   #Getter methods
   def get_cardNum(self):
     return self.cardNum
